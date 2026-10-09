@@ -1,0 +1,37 @@
+name: release-data
+
+# Rebuilds the "everything at once" downloads and republishes them on the data-v1 release,
+# so https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/<asset> stays current.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-data
+  cancel-in-progress: true
+
+jobs:
+  bundles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Manifest is current
+        run: python3 tools/build_manifest.py --check
+      - name: Build bundles
+        run: python3 tools/build_bundles.py --out dist
+      - name: Publish to the data-v1 release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view data-v1 >/dev/null 2>&1; then
+            gh release create data-v1 --title "Data v1" --notes "Synthetic data bundles and the full catalog. Rebuilt automatically from main." --latest
+          fi
+          gh release upload data-v1 dist/* --clobber
+          gh release edit data-v1 --notes "Synthetic data bundles and the full catalog. Last rebuilt from main at ${GITHUB_SHA::7} on $(date -u +%Y-%m-%d)." --latest

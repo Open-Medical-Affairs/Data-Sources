@@ -56,10 +56,10 @@ for p in sorted((ROOT / "public/evidence-snapshots").glob("*.json")):
     if j.get("source_kind") != "real_public":
         errors.append(f"{p.relative_to(ROOT)}: public snapshot must be source_kind real_public")
 
-for cmd in (["tools/build_index.py", "--check"], ["tools/build_catalog.py", "--check"]):
+for cmd in (["tools/build_index.py", "--check"], ["tools/build_catalog.py", "--check"], ["tools/build_manifest.py", "--check"]):
     r = subprocess.run([sys.executable, *cmd], cwd=ROOT, capture_output=True, text=True)
     (print(r.stdout.strip()) if r.returncode == 0 else errors.append((r.stdout + r.stderr).strip()))
 
 if errors:
     print(f"{len(errors)} error(s):"); [print("  -", e) for e in errors]; sys.exit(1)
-print(f"All checks passed: {idx['count']} synthetic files, public catalog current.")
+print(f"All checks passed: {idx['count']} synthetic files, public catalog and manifest current.")

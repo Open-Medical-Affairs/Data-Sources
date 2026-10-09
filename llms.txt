@@ -8,6 +8,12 @@ Agents: read AGENTS.md first.
 - [AGENTS.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/AGENTS.md): how to use both halves safely
 - [README.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/README.md): overview, layout, license and terms
 
+## Get the data
+- [manifest.json](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/manifest.json): every dataset (synthetic and public) with licence, access type, direct and view URLs; also manifest.csv
+- [all-synthetic-data.zip](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic-data.zip): every synthetic file in one download
+- [all-synthetic.jsonl](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic.jsonl): every synthetic row and document, one JSON object per line
+- [all-data-catalog.zip](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-data-catalog.zip): manifest, public catalog, synthetic index and evidence snapshots
+
 ## Synthetic datasets (SYNTHETIC — fictional)
 - [synthetic/index.json](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/index.json): every file with synthetic:true, product, therapeutic area, description, raw link, used_by skills/missions
 - [synthetic/README.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/README.md): the packs and how to regenerate them
