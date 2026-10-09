@@ -47,6 +47,10 @@ BUNDLES = [
     ("manifest.csv", "This manifest (CSV)", "CSV"),
 ]
 
+AREAS = {"oncology-mm": "multiple myeloma", "immunology-ad": "atopic dermatitis", "cardiometabolic-obesity": "obesity"}
+SYN_GROUPS = {"oncology-mm": "Oncology · NORVANTIB (synthetic)", "immunology-ad": "Immunology · DERMALYX (synthetic)",
+              "cardiometabolic-obesity": "Cardiometabolic · ADIPOSYN (synthetic)", "connected": "Practice CRM (synthetic)", "all": "All synthetic packs"}
+
 FIELDS = ["id", "name", "type", "group", "product", "format", "license", "data_policy", "link_only",
           "access", "direct_url", "view_url", "size_bytes", "rows", "description"]
 
@@ -72,15 +76,6 @@ def build():
             "size_bytes": p.stat().st_size if p.exists() and p.suffix != ".sqlite" else None, "rows": e.get("rows"),  # SQLite bytes vary by build
             "description": e.get("description", ""),
         })
-    for p in sorted((ROOT / "public/evidence-snapshots").glob("*.json")):
-        rel = p.relative_to(ROOT).as_posix()
-        rows.append({
-            "id": "pub-snapshot-" + p.stem, "name": p.name, "type": "public-snapshot", "group": p.stem,
-            "product": "", "format": "JSON", "license": "Crossref metadata (facts, free to reuse); papers keep their own licences",
-            "data_policy": "open", "link_only": False, "access": "download", "direct_url": RAW + rel,
-            "view_url": BLOB + rel, "size_bytes": p.stat().st_size, "rows": None,
-            "description": "REAL public paper metadata (titles and DOIs) for practising evidence searches. Never evidence for the fictional products.",
-        })
     for s in cat["sources"]:
         link_only = s["data_policy"] == "link-only"
         kind, durl, fmt = PUBLIC_FETCH.get(s["id"], (None, None, None))
@@ -93,6 +88,15 @@ def build():
             "access": "link-only" if link_only else (kind or "official-site"),
             "direct_url": durl or s.get("api_docs") or s["url"], "view_url": s["url"],
             "size_bytes": None, "rows": None, "description": s["contents"],
+        })
+    for p in sorted((ROOT / "public/evidence-snapshots").glob("*.json")):
+        rel = p.relative_to(ROOT).as_posix()
+        rows.append({
+            "id": "pub-snapshot-" + p.stem, "name": f"Real paper examples: {AREAS.get(p.stem, p.stem)} ({p.name})", "type": "public-snapshot", "group": "evidence-snapshots",
+            "product": "", "format": "JSON", "license": "Crossref metadata (facts, free to reuse); papers keep their own licences",
+            "data_policy": "open", "link_only": False, "access": "download", "direct_url": RAW + rel,
+            "view_url": BLOB + rel, "size_bytes": p.stat().st_size, "rows": None,
+            "description": "REAL public paper metadata (titles and DOIs) for practising evidence searches. Never evidence for the fictional products.",
         })
     for r in rows:
         if r["type"] == "synthetic":
@@ -120,6 +124,7 @@ def build():
             "official-site": "Real public source. direct_url is the official download or API page; read its terms first.",
             "link-only": "LINK ONLY: never copy this data into repositories, decks or shared files. Use it at the source under its own terms.",
         },
+        "groups": dict(SYN_GROUPS, **{"evidence-snapshots": "Real paper examples"}, **{g["id"]: g["title"] for g in cat["groups"]}),
         "everything_at_once": [{"asset": a, "description": d, "format": f, "url": LATEST + a} for a, d, f in BUNDLES],
         "counts": counts,
         "datasets": rows,
