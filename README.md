@@ -1,5 +1,94 @@
 # Data-Sources
 
+![On the left, a sandbox of fictional practice files marked with caution tape; on the right, real public sources such as regulators and registries; an AI agent and a Medical Affairs colleague in the middle](assets/data-hero.jpg)
+
+**The data your AI agent can practice and work with: a fictional Medical Affairs company to rehearse on, and a guide to 52 real public data sources.**
+
+## New to GitHub? Start here
+
+You don't need to install anything or know GitHub. This page is a link you hand to your AI agent.
+
+![Three steps: 1 copy the repository link, 2 give it to your AI agent, 3 the agent does the job and you review it](assets/how-it-works.jpg)
+
+1. **Copy this page's link** from your browser's address bar:
+   `https://github.com/Open-Medical-Affairs/Data-Sources`.
+   (Or click the green **Code** button near the top right of this page and copy the link under **HTTPS**.)
+2. **Give it to your AI agent.** In Grok Bot, ChatGPT, Claude, Microsoft Copilot or your own agent, start a new conversation and paste:
+
+   ```
+   Read https://github.com/Open-Medical-Affairs/Data-Sources and use the synthetic oncology data to summarize what the field team heard this quarter. Mark everything SYNTHETIC and DRAFT.
+   ```
+
+   Or, for real public information: *"Read https://github.com/Open-Medical-Affairs/Data-Sources and use its public source list to find the current US label and the EU approval status for semaglutide."*
+3. **Let it work, then review.** The agent finds the right files or sources and hands back a draft. **You are the final judge.**
+
+For the step-by-step Medical Affairs know-how, give your agent the companion skills library too:
+**[Open-Medical-Affairs/Medical-Affairs-Skills](https://github.com/Open-Medical-Affairs/Medical-Affairs-Skills)**. Event prompts and missions are on the
+**[AI in Action website](https://github.com/Open-Medical-Affairs/AI-in-Action-Website)**.
+
+## What's inside
+
+| | What | In plain words | Where |
+|---|---|---|---|
+| 🧪 | **Synthetic practice data** | A pretend pharma company (Nordvant Biopharma) with three pretend medicines, plus field notes, KOL files, MI enquiries, plans and a practice CRM | [`synthetic/`](synthetic/README.md) |
+| 🌐 | **Public data sources** | A guide to 52 real, free sources (PubMed, DailyMed, ClinicalTrials.gov, CMS Open Payments…) grouped by Medical Affairs job | [`public/catalog.md`](public/catalog.md) |
+| 📚 | **Real paper examples** | Nine real published papers (titles and DOIs only) for practising evidence searches | [`public/evidence-snapshots/`](public/evidence-snapshots/README.md) |
+| 🤖 | **For agents** | Machine-readable lists and instructions | [`AGENTS.md`](AGENTS.md) · [`synthetic/index.json`](synthetic/index.json) · [`public/catalog.json`](public/catalog.json) |
+
+## Synthetic vs public: what's the difference?
+
+**🧪 SYNTHETIC = a flight simulator.** Everything in [`synthetic/`](synthetic/README.md) is invented so you can practise safely: no real patients, doctors, company or medicine. It behaves like real work, mistakes included, on purpose.
+
+> [!WARNING]
+> **Synthetic data is fictional.** Nordvant Biopharma, NORVANTIB, DERMALYX and ADIPOSYN do not exist, and no record describes a real person or patient.
+> Never cite it as evidence, never mix it with real data, and never upload real company or patient data here.
+
+| Pack | Pretend product | Disease area |
+|---|---|---|
+| [Oncology](synthetic/oncology-mm/README.md) | NORVANTIB | Relapsed/refractory multiple myeloma |
+| [Immunology](synthetic/immunology-ad/README.md) | DERMALYX | Moderate-to-severe atopic dermatitis |
+| [Cardiometabolic](synthetic/cardiometabolic-obesity/README.md) | ADIPOSYN | Obesity |
+| [Connected practice CRM](synthetic/connected/README.md) | all three | 90 clinicians, 163 field interactions, 180 MSL tasks |
+
+**🌐 PUBLIC = the real world.** [`public/`](public/catalog.md) points to real, free sources from regulators, registries and journals. We **link** to them; we don't copy their data. Each one is marked:
+
+- ✅ **Open**: free to use with attribution.
+- ⚠️ **Check terms**: usable, but read the licence first.
+- ⛔ **Link only: do not copy data**: for example IHME disease-burden data, ORCID, NICE outside the UK and Reddit, which restrict commercial use or redistribution.
+
+> [!IMPORTANT]
+> Never paste patient information or confidential company data into a public source search.
+
+### Top 15 public sources to start with
+
+| # | Source | Why it matters | Agent can call it directly? |
+|---|---|---|---|
+| 1 | [DailyMed web services](https://dailymed.nlm.nih.gov/) | Current and historical US labels for any asset or competitor: the backbone for MI responses and launch label readiness. | ✅ Yes |
+| 2 | [EMA website data in JSON](https://www.ema.europa.eu/en/medicines/download-medicine-data) | One download covers EU medicines, EPAR documents, PSUSAs, DHPCs, orphans and shortages, so the swarm gets EU launch context. | ✅ Yes |
+| 3 | [RxNav APIs](https://lhncbc.nlm.nih.gov/RxNav/) | Normalizes brand and generic names and gives ATC/EPC class, so a competitor landscape builds itself from one drug name. | ✅ Yes |
+| 4 | [NPPES NPI Registry API](https://npiregistry.cms.hhs.gov/) | Real US HCP identity and specialty lookups for KOL mapping and field planning. | ✅ Yes |
+| 5 | [CMS Open Payments](https://openpaymentsdata.cms.gov/) | Shows industry relationships per HCP, useful for advisory board planning and KOL due diligence. | ✅ Yes |
+| 6 | [Medicare Part D Prescribers by Provider and Drug](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider-and-drug) | Shows where a therapy class is actually prescribed, by NPI, for field deployment in launch planning. | ✅ Yes |
+| 7 | [CMS Medicare Coverage Database](https://www.cms.gov/medicare-coverage-database/) | No-key coverage API covering NCDs and LCDs, the payer/access piece of a launch plan. | ✅ Yes |
+| 8 | [WHO ICTRP Search Portal](https://trialsearch.who.int/) | Global trial landscape beyond ClinicalTrials.gov, including ChiCTR and EU registries. | Files / web |
+| 9 | [Drugs@FDA data files](https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-data-files) | Approval histories for analog launch timelines (also queryable as openFDA JSON). | Files / web |
+| 10 | [bioRxiv / medRxiv API](https://www.medrxiv.org/) | Preprint early warning for competitive intelligence and congress season. | ✅ Yes |
+| 11 | [MeSH RDF / Lookup API](https://id.nlm.nih.gov/mesh/) | Gives agents real search vocabulary, which improves every PubMed-based skill. | ✅ Yes |
+| 12 | [NIH RePORTER API](https://reporter.nih.gov/) | Funded investigators and projects for KOL discovery and evidence-gap partners. | ✅ Yes |
+| 13 | [WHO Global Health Observatory OData API](https://www.who.int/data/gho) | Country-level burden numbers for the 'why this matters' slide of every launch plan. | ✅ Yes |
+| 14 | [FDA Patient-Focused Drug Development meeting reports](https://www.fda.gov/industry/prescription-drug-user-fee-amendments/fda-led-patient-focused-drug-development-pfdd-public-meetings) | A ToS-safe patient voice: unmet need, symptoms and impact by condition. | Files / web |
+| 15 | [Open Targets Platform](https://platform.opentargets.org/) | The only official MCP server found, with CC0 data. It's a live demo of an agent calling a source directly. | ✅ Yes |
+
+All 52, with access, rate limits, licences and caveats: [`public/catalog.md`](public/catalog.md).
+
+![A Medical Affairs team building with AI agents together](assets/build-team.jpg)
+
+<sub>Illustrations generated for Open Medical Affairs.</sub>
+
+---
+
+# For builders
+
 **Data for Medical Affairs AI agents, in two clearly separated halves:**
 
 | | What | Where | Truth status |
@@ -73,6 +162,7 @@ A sibling checkout (`../Data-Sources`) or `MA_DATA_SOURCES=/path/to/Data-Sources
 ```
 Data-Sources/
 ├── README.md · AGENTS.md · llms.txt · LICENSE · NOTICE
+├── assets/                    README illustrations
 ├── synthetic/                 SYNTHETIC — fictional
 │   ├── README.md · index.json · SKILL-COVERAGE.md
 │   ├── generate.py · synthetic_expansion.py
