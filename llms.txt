@@ -1,0 +1,26 @@
+# Open-Medical-Affairs Data-Sources
+
+> Data for Medical Affairs AI agents in two separate halves: SYNTHETIC workshop datasets (fictional company Nordvant Biopharma; fictional products NORVANTIB, DERMALYX, ADIPOSYN; not real patients or products) and a catalog of 52 REAL public data sources grouped by Medical Affairs job. Never mix the two. Companion to github.com/Open-Medical-Affairs/Medical-Affairs-Skills.
+
+Agents: read AGENTS.md first.
+
+## Start here
+- [AGENTS.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/AGENTS.md): how to use both halves safely
+- [README.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/README.md): overview, layout, license and terms
+
+## Synthetic datasets (SYNTHETIC — fictional)
+- [synthetic/index.json](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/index.json): every file with synthetic:true, product, therapeutic area, description, raw link, used_by skills/missions
+- [synthetic/README.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/README.md): the packs and how to regenerate them
+- [Oncology pack · NORVANTIB](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/README.md)
+- [Immunology pack · DERMALYX](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/README.md)
+- [Cardiometabolic pack · ADIPOSYN](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/README.md)
+- [Connected practice organization (CRM, SQLite)](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/README.md)
+- [Data dictionary](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/data-dictionary.json)
+
+## Public sources (REAL — linked, not mirrored)
+- [public/catalog.json](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/public/catalog.json): 52 sources, top 15 ranked, data_policy (open / check-terms / link-only), rate limits, licenses, agent readiness, verification
+- [public/catalog.md](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/public/catalog.md): the same catalog for humans
+- [Evidence snapshots](https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/public/evidence-snapshots/README.md): real Crossref metadata, teaching examples only
+
+## Optional
+- [Medical-Affairs-Skills](https://github.com/Open-Medical-Affairs/Medical-Affairs-Skills): the skills that use this data

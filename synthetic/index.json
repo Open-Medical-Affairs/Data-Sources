@@ -1,0 +1,3313 @@
+{
+  "label": "SYNTHETIC DATA — fictional data for training/workshops, not real patients/products",
+  "name": "Open-Medical-Affairs synthetic workshop data",
+  "synthetic": true,
+  "company": "Nordvant Biopharma (fictional)",
+  "scenario_date": "2026-10-01",
+  "used_by_source": "github.com/Open-Medical-Affairs/Medical-Affairs-Skills workshop/catalog.json and workshop/missions/",
+  "path_in_skills_repo": "Clone this repository into Data-Sources/ at the root of Medical-Affairs-Skills; then Data-Sources/<path> resolves.",
+  "packs": [
+    {
+      "id": "oncology-mm",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "product": "NORVANTIB",
+      "folder": "synthetic/oncology-mm/",
+      "files": 32
+    },
+    {
+      "id": "immunology-ad",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "product": "DERMALYX",
+      "folder": "synthetic/immunology-ad/",
+      "files": 32
+    },
+    {
+      "id": "cardiometabolic-obesity",
+      "therapeutic_area": "Obesity and weight management",
+      "product": "ADIPOSYN",
+      "folder": "synthetic/cardiometabolic-obesity/",
+      "files": 32
+    },
+    {
+      "id": "connected",
+      "therapeutic_area": "all",
+      "product": "all",
+      "folder": "synthetic/connected/",
+      "files": 14
+    }
+  ],
+  "count": 114,
+  "files": [
+    {
+      "path": "synthetic/README.md",
+      "synthetic": true,
+      "kind": "documentation",
+      "therapeutic_area": "all",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "What the synthetic data is and how to use it",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/README.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/README.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/SKILL-COVERAGE.md",
+      "synthetic": true,
+      "kind": "documentation",
+      "therapeutic_area": "all",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Which skill each synthetic artefact exercises",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/SKILL-COVERAGE.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/SKILL-COVERAGE.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/README.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Data pack",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/README.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/README.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/abstract-poster-brief.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Congress abstract and poster brief",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/abstract-poster-brief.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/abstract-poster-brief.md",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "congress-abstract-and-poster",
+          "visual-abstract"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/advisory-board-transcript.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Advisory board transcript",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/advisory-board-transcript.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/advisory-board-transcript.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "transcript"
+        ],
+        "team_missions": [],
+        "skills": [
+          "advisory-board-design",
+          "insight-generation",
+          "medical-affairs-foundations",
+          "meeting-transcription"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/competitor-announcements.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Press releases and corporate statements",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/competitor-announcements.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/competitor-announcements.md",
+      "used_by": {
+        "missions": [
+          "congress"
+        ],
+        "team_missions": [
+          "mission-3",
+          "mission-5"
+        ],
+        "skills": [
+          "competitive-intelligence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/congress-abstracts.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "What was presented at the recent congress",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/congress-abstracts.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/congress-abstracts.md",
+      "used_by": {
+        "missions": [
+          "congress"
+        ],
+        "team_missions": [
+          "mission-3"
+        ],
+        "skills": [
+          "competitive-intelligence",
+          "congress-intelligence",
+          "evidence-synthesis",
+          "literature-surveillance"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/document-ingestion-challenge.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Scanned-source transcription challenge",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/document-ingestion-challenge.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/document-ingestion-challenge.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "document-ingestion"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/evidence-landscape.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "What is known, what competitors have, what nobody has answered",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/evidence-landscape.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/evidence-landscape.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "evidence-investment",
+          "kol-meeting",
+          "launch-plan-swarm",
+          "patient-partnership",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "advisory-board-design",
+          "evidence-gap-analysis",
+          "literature-surveillance",
+          "medical-launch-plan",
+          "medical-strategy-plan",
+          "public-evidence-search",
+          "pubmed-search"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/field-account-plan.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Field account plan",
+      "format": "CSV",
+      "rows": 15,
+      "columns": [
+        "account_id",
+        "region",
+        "setting",
+        "eligible_patients_estimate",
+        "scientific_need_score",
+        "access_minutes",
+        "last_meaningful_exchange",
+        "open_request",
+        "priority_in_current_plan"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/field-account-plan.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/field-account-plan.csv",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "field-medical-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/field-observations.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "54 field interaction records from one quarter",
+      "format": "CSV",
+      "rows": 54,
+      "columns": [
+        "record_id",
+        "date",
+        "msl",
+        "contact_id",
+        "setting",
+        "country",
+        "channel",
+        "observation"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/field-observations.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/field-observations.csv",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "field-insights",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-2",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "field-insight-synthesis",
+          "insight-generation",
+          "medical-education-program",
+          "workshop-launcher"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/guideline-landscape.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Guideline landscape",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/guideline-landscape.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/guideline-landscape.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "guideline-engagement",
+          "launch-timeline-and-governance",
+          "systematic-literature-review"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/iis-proposal.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Investigator-initiated study proposal",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/iis-proposal.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/iis-proposal.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment"
+        ],
+        "team_missions": [],
+        "skills": [
+          "clinical-trials-search",
+          "integrated-evidence-plan",
+          "investigator-initiated-study-review",
+          "medical-correspondence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/integrated-evidence-plan.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Integrated evidence plan",
+      "format": "CSV",
+      "rows": 5,
+      "columns": [
+        "work_id",
+        "question",
+        "decision",
+        "design",
+        "owner",
+        "cost_gbp",
+        "start",
+        "readout",
+        "status",
+        "dependency"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/integrated-evidence-plan.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/integrated-evidence-plan.csv",
+      "used_by": {
+        "missions": [
+          "evidence-investment",
+          "launch-plan-swarm",
+          "launch-readiness",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [],
+        "skills": [
+          "clinical-trials-search",
+          "diagram-and-schema",
+          "evidence-gap-analysis",
+          "integrated-evidence-plan",
+          "investigator-initiated-study-review",
+          "launch-timeline-and-governance",
+          "strategic-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/interaction-notes.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "What happened at the last meeting with each",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/interaction-notes.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/interaction-notes.md",
+      "used_by": {
+        "missions": [
+          "kol-meeting",
+          "msl-post-call"
+        ],
+        "team_missions": [
+          "mission-1"
+        ],
+        "skills": [
+          "kol-engagement-brief",
+          "msl-post-call-follow-up"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/kol-dossiers.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Three experts, including one who is deliberately difficult",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/kol-dossiers.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/kol-dossiers.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "kol-meeting"
+        ],
+        "team_missions": [
+          "mission-1"
+        ],
+        "skills": [
+          "kol-engagement-brief"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/launch-readiness-register.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Launch readiness register",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/launch-readiness-register.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/launch-readiness-register.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-7"
+        ],
+        "skills": [
+          "launch-medical-readiness",
+          "launch-timeline-and-governance",
+          "medical-launch-plan"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/manuscript-draft.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Manuscript source draft",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/manuscript-draft.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/manuscript-draft.md",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "deliverable-quality-review",
+          "pubmed-search",
+          "scientific-manuscript"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/medical-education-needs.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Independent medical education needs assessment",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/medical-education-needs.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/medical-education-needs.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "patient-partnership"
+        ],
+        "team_missions": [],
+        "skills": [
+          "medical-education-program"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/medical-impact-metrics.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Medical impact metrics",
+      "format": "CSV",
+      "rows": 6,
+      "columns": [
+        "month",
+        "scientific_exchanges",
+        "unique_hcps",
+        "repeat_hcp_share",
+        "insights_submitted",
+        "insights_actioned",
+        "requests_closed_on_time",
+        "publication_milestones_on_time",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/medical-impact-metrics.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/medical-impact-metrics.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "executive-briefing",
+          "field-medical-planning",
+          "interactive-html-report",
+          "medical-affairs-metrics",
+          "medical-strategy-plan"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/medical-information-enquiries.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Medical information enquiries",
+      "format": "CSV",
+      "rows": 6,
+      "columns": [
+        "id",
+        "date",
+        "requester",
+        "country",
+        "channel",
+        "verbatim",
+        "response_status"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/medical-information-enquiries.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/medical-information-enquiries.csv",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness",
+          "medical-information"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-field-training",
+          "medical-affairs-foundations",
+          "medical-correspondence",
+          "medical-information-response",
+          "regulatory-label-intelligence",
+          "safety-communication"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/medical-plan.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "This year's plan, with the problems real plans have",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/medical-plan.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/medical-plan.md",
+      "used_by": {
+        "missions": [
+          "congress",
+          "field-insights",
+          "launch-plan-swarm",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "congress-intelligence",
+          "executive-briefing",
+          "medical-affairs-metrics",
+          "medical-launch-plan",
+          "medical-strategy-plan",
+          "strategic-analysis",
+          "workshop-launcher"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/mlr-review-comments.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "MLR review history",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/mlr-review-comments.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/mlr-review-comments.md",
+      "used_by": {
+        "missions": [
+          "launch-readiness"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-medical-readiness",
+          "mlr-review-readiness"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/patient-level-analysis.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Patient level analysis",
+      "format": "CSV",
+      "rows": 60,
+      "columns": [
+        "patient_id",
+        "arm",
+        "age_band",
+        "region",
+        "baseline_score",
+        "week16_change",
+        "responder",
+        "time_to_event_days",
+        "event",
+        "ae_grade3_plus"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/patient-level-analysis.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/patient-level-analysis.csv",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "data-visualization-for-medical",
+          "medical-slide-deck",
+          "real-world-evidence-design",
+          "visual-abstract"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/payer-hta-brief.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Payer and HTA evidence brief",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/payer-hta-brief.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/payer-hta-brief.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment",
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "payer-value-dossier",
+          "systematic-literature-review"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/plain-language-source.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Plain-language summary source",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/plain-language-source.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/plain-language-source.md",
+      "used_by": {
+        "missions": [
+          "patient-partnership",
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "deliverable-quality-review",
+          "plain-language-summary"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/product-profile.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "The compound, its approved indication, pivotal evidence and safety",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/product-profile.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/product-profile.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "congress",
+          "connected-planning",
+          "field-insights",
+          "kol-meeting",
+          "launch-plan-swarm",
+          "medical-information",
+          "msl-post-call",
+          "msl-pre-call",
+          "publication",
+          "thirty-day-capstone",
+          "transcript"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6",
+          "mission-7"
+        ],
+        "skills": [
+          "capability-detection",
+          "consulting-grade-design",
+          "evidence-appraisal",
+          "launch-field-training",
+          "library-menu",
+          "medical-affairs-orchestrator",
+          "medical-information-response",
+          "medical-launch-plan",
+          "msl-post-call-follow-up",
+          "msl-pre-call-planning",
+          "pdf-generation",
+          "plain-language-summary",
+          "promotional-material-medical-review",
+          "spreadsheet-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/promotional-claims-review.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Medical review exercise",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/promotional-claims-review.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/promotional-claims-review.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "mlr-review-readiness",
+          "promotional-material-medical-review",
+          "regulatory-label-intelligence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/publication-plan.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "What is currently planned",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/publication-plan.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/publication-plan.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "launch-timeline-and-governance",
+          "scientific-communication-strategy"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/rwe-study-concept.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "RWE protocol concept",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/rwe-study-concept.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/rwe-study-concept.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment"
+        ],
+        "team_missions": [],
+        "skills": [
+          "diagram-and-schema",
+          "integrated-evidence-plan",
+          "real-world-evidence-design"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/safety-case-series.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Safety communication source cases",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/safety-case-series.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/safety-case-series.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-field-training",
+          "safety-communication"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/scientific-platform-draft.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Scientific platform draft v0.7",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/scientific-platform-draft.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/scientific-platform-draft.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness"
+        ],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "launch-field-training",
+          "medical-slide-deck",
+          "scientific-communication-strategy",
+          "scientific-platform"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/structured-evidence-table.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Structured evidence table",
+      "format": "CSV",
+      "rows": 10,
+      "columns": [
+        "source_id",
+        "study",
+        "design",
+        "population_n",
+        "endpoint",
+        "result",
+        "role",
+        "evidence_tier",
+        "limitation"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/structured-evidence-table.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/structured-evidence-table.csv",
+      "used_by": {
+        "missions": [
+          "medical-information",
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "capability-detection",
+          "congress-abstract-and-poster",
+          "consulting-grade-design",
+          "evidence-appraisal",
+          "evidence-synthesis",
+          "guideline-engagement",
+          "interactive-html-report",
+          "medical-affairs-orchestrator",
+          "payer-value-dossier",
+          "pdf-generation",
+          "scientific-manuscript",
+          "scientific-platform",
+          "spreadsheet-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/cardiometabolic-obesity/terminology-coding-queue.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Obesity and weight management",
+      "ta_id": "cardiometabolic-obesity",
+      "product": "ADIPOSYN",
+      "description": "Terminology coding queue",
+      "format": "CSV",
+      "rows": 5,
+      "columns": [
+        "record",
+        "verbatim",
+        "proposed_concept",
+        "proposed_code",
+        "confidence",
+        "review_needed"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/cardiometabolic-obesity/terminology-coding-queue.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/cardiometabolic-obesity/terminology-coding-queue.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "field-insight-synthesis",
+          "medical-terminology-mapping"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/README.md",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "How to use the connected practice organization",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/README.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/README.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/connected/access_log.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Institutional access routes and rules",
+      "format": "CSV",
+      "rows": 90,
+      "columns": [
+        "access_id",
+        "hcp_id",
+        "therapeutic_area",
+        "route",
+        "status",
+        "institution_rule",
+        "contact_detail",
+        "last_checked",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/access_log.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/access_log.csv",
+      "used_by": {
+        "missions": [
+          "hcp-access",
+          "msl-admin",
+          "msl-pre-call"
+        ],
+        "team_missions": [],
+        "skills": [
+          "hcp-discovery-and-access",
+          "msl-administrative-operations",
+          "msl-pre-call-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/accounts.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Institutions with capacity and scientific need",
+      "format": "CSV",
+      "rows": 24,
+      "columns": [
+        "account_id",
+        "therapeutic_area",
+        "name",
+        "capacity_hours_month",
+        "scientific_need"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/accounts.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/accounts.csv",
+      "used_by": {
+        "missions": [
+          "connected-planning",
+          "hcp-access"
+        ],
+        "team_missions": [],
+        "skills": [
+          "hcp-discovery-and-access"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/content_assets.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Content library with review status and due dates",
+      "format": "CSV",
+      "rows": 36,
+      "columns": [
+        "asset_id",
+        "therapeutic_area",
+        "topic",
+        "audience",
+        "format",
+        "version",
+        "review_status",
+        "review_due",
+        "jurisdiction",
+        "language",
+        "source_file"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/content_assets.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/content_assets.csv",
+      "used_by": {
+        "missions": [
+          "connected-planning",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [],
+        "skills": [
+          "medical-content-operations"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/data-dictionary.json",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Fields, joins and row counts",
+      "format": "JSON",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/data-dictionary.json",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/data-dictionary.json",
+      "used_by": {
+        "missions": [
+          "connected-planning",
+          "hcp-access",
+          "msl-admin",
+          "msl-pre-call"
+        ],
+        "team_missions": [],
+        "skills": [
+          "data-connection",
+          "hcp-discovery-and-access",
+          "msl-administrative-operations",
+          "msl-pre-call-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/engagement.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Education engagement: invited, attended, pre/post scores",
+      "format": "CSV",
+      "rows": 90,
+      "columns": [
+        "event_id",
+        "hcp_id",
+        "asset_id",
+        "therapeutic_area",
+        "invited",
+        "attended",
+        "completed",
+        "pre_score",
+        "post_score",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/engagement.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/engagement.csv",
+      "used_by": {
+        "missions": [
+          "connected-planning"
+        ],
+        "team_missions": [],
+        "skills": [
+          "medical-content-operations"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/enquiries.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Medical information enquiries",
+      "format": "CSV",
+      "rows": 18,
+      "columns": [
+        "enquiry_id",
+        "therapeutic_area",
+        "requester",
+        "country",
+        "date",
+        "verbatim",
+        "response_status",
+        "source_file",
+        "source_record"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/enquiries.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/enquiries.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "data-connection",
+          "medical-information-response"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/hcps.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Fictional clinicians, channel preferences and permissions",
+      "format": "CSV",
+      "rows": 90,
+      "columns": [
+        "hcp_id",
+        "original_id",
+        "therapeutic_area",
+        "account_id",
+        "name",
+        "country",
+        "setting",
+        "email_permission",
+        "preferred_channel",
+        "profile_note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/hcps.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/hcps.csv",
+      "used_by": {
+        "missions": [
+          "connected-planning",
+          "hcp-access",
+          "msl-admin",
+          "msl-pre-call"
+        ],
+        "team_missions": [],
+        "skills": [
+          "data-connection",
+          "hcp-discovery-and-access",
+          "msl-administrative-operations",
+          "msl-pre-call-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/interactions.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Field interactions with verbatims and source links",
+      "format": "CSV",
+      "rows": 163,
+      "columns": [
+        "interaction_id",
+        "hcp_id",
+        "therapeutic_area",
+        "date",
+        "msl",
+        "channel",
+        "verbatim",
+        "source_file",
+        "source_record"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/interactions.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/interactions.csv",
+      "used_by": {
+        "missions": [
+          "connected-planning",
+          "hcp-access",
+          "msl-admin",
+          "msl-pre-call"
+        ],
+        "team_missions": [],
+        "skills": [
+          "data-connection",
+          "hcp-discovery-and-access",
+          "msl-administrative-operations",
+          "msl-pre-call-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/medical-affairs.sqlite",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "All connected tables in one SQLite file (no server or login)",
+      "format": "SQLite",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/medical-affairs.sqlite",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/medical-affairs.sqlite",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "data-connection"
+        ],
+        "scripts": [
+          "scripts/msl_admin.py",
+          "scripts/query_database.py"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/msl_tasks.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "MSL task queue with owners and due dates",
+      "format": "CSV",
+      "rows": 180,
+      "columns": [
+        "task_id",
+        "hcp_id",
+        "therapeutic_area",
+        "source_commitment_id",
+        "task_text",
+        "owner_role",
+        "due_date",
+        "status",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/msl_tasks.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/msl_tasks.csv",
+      "used_by": {
+        "missions": [
+          "hcp-access",
+          "msl-admin",
+          "msl-post-call",
+          "msl-pre-call"
+        ],
+        "team_missions": [],
+        "skills": [
+          "hcp-discovery-and-access",
+          "msl-administrative-operations",
+          "msl-post-call-follow-up",
+          "msl-pre-call-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/patient_partnerships.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Patient organization inputs and quote permissions",
+      "format": "CSV",
+      "rows": 12,
+      "columns": [
+        "partner_id",
+        "therapeutic_area",
+        "organization",
+        "need",
+        "input",
+        "permission_to_quote",
+        "commercial_link"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/patient_partnerships.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/patient_partnerships.csv",
+      "used_by": {
+        "missions": [
+          "patient-partnership"
+        ],
+        "team_missions": [],
+        "skills": [
+          "patient-engagement-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/connected/projects.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Evidence projects with cost, hours and dependencies",
+      "format": "CSV",
+      "rows": 18,
+      "columns": [
+        "project_id",
+        "therapeutic_area",
+        "objective",
+        "cost_gbp",
+        "hours",
+        "status",
+        "dependency",
+        "decision_needed"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/projects.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/projects.csv",
+      "used_by": {
+        "missions": [
+          "thirty-day-capstone"
+        ],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/connected/source_links.csv",
+      "synthetic": true,
+      "kind": "practice-organization",
+      "therapeutic_area": "all",
+      "ta_id": "connected",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Source registry with file hashes",
+      "format": "CSV",
+      "rows": 96,
+      "columns": [
+        "source_id",
+        "path",
+        "sha256",
+        "source_kind",
+        "license",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/connected/source_links.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/connected/source_links.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "data-connection"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/generate.py",
+      "synthetic": true,
+      "kind": "tooling",
+      "therapeutic_area": "all",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Deterministic generator for the three therapeutic-area packs",
+      "format": "Python",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/generate.py",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/generate.py",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/README.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Data pack",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/README.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/README.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/abstract-poster-brief.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Congress abstract and poster brief",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/abstract-poster-brief.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/abstract-poster-brief.md",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "congress-abstract-and-poster",
+          "visual-abstract"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/advisory-board-transcript.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Advisory board transcript",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/advisory-board-transcript.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/advisory-board-transcript.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "transcript"
+        ],
+        "team_missions": [],
+        "skills": [
+          "advisory-board-design",
+          "insight-generation",
+          "medical-affairs-foundations",
+          "meeting-transcription"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/competitor-announcements.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Press releases and corporate statements",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/competitor-announcements.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/competitor-announcements.md",
+      "used_by": {
+        "missions": [
+          "congress"
+        ],
+        "team_missions": [
+          "mission-3",
+          "mission-5"
+        ],
+        "skills": [
+          "competitive-intelligence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/congress-abstracts.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "What was presented at the recent congress",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/congress-abstracts.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/congress-abstracts.md",
+      "used_by": {
+        "missions": [
+          "congress"
+        ],
+        "team_missions": [
+          "mission-3"
+        ],
+        "skills": [
+          "competitive-intelligence",
+          "congress-intelligence",
+          "evidence-synthesis",
+          "literature-surveillance"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/document-ingestion-challenge.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Scanned-source transcription challenge",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/document-ingestion-challenge.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/document-ingestion-challenge.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "document-ingestion"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/evidence-landscape.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "What is known, what competitors have, what nobody has answered",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/evidence-landscape.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/evidence-landscape.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "evidence-investment",
+          "kol-meeting",
+          "launch-plan-swarm",
+          "patient-partnership",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "advisory-board-design",
+          "evidence-gap-analysis",
+          "literature-surveillance",
+          "medical-launch-plan",
+          "medical-strategy-plan",
+          "public-evidence-search",
+          "pubmed-search"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/field-account-plan.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Field account plan",
+      "format": "CSV",
+      "rows": 15,
+      "columns": [
+        "account_id",
+        "region",
+        "setting",
+        "eligible_patients_estimate",
+        "scientific_need_score",
+        "access_minutes",
+        "last_meaningful_exchange",
+        "open_request",
+        "priority_in_current_plan"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/field-account-plan.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/field-account-plan.csv",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "field-medical-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/field-observations.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "54 field interaction records from one quarter",
+      "format": "CSV",
+      "rows": 54,
+      "columns": [
+        "record_id",
+        "date",
+        "msl",
+        "contact_id",
+        "setting",
+        "country",
+        "channel",
+        "observation"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/field-observations.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/field-observations.csv",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "field-insights",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-2",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "field-insight-synthesis",
+          "insight-generation",
+          "medical-education-program",
+          "workshop-launcher"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/guideline-landscape.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Guideline landscape",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/guideline-landscape.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/guideline-landscape.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "guideline-engagement",
+          "launch-timeline-and-governance",
+          "systematic-literature-review"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/iis-proposal.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Investigator-initiated study proposal",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/iis-proposal.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/iis-proposal.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment"
+        ],
+        "team_missions": [],
+        "skills": [
+          "clinical-trials-search",
+          "integrated-evidence-plan",
+          "investigator-initiated-study-review",
+          "medical-correspondence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/integrated-evidence-plan.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Integrated evidence plan",
+      "format": "CSV",
+      "rows": 5,
+      "columns": [
+        "work_id",
+        "question",
+        "decision",
+        "design",
+        "owner",
+        "cost_gbp",
+        "start",
+        "readout",
+        "status",
+        "dependency"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/integrated-evidence-plan.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/integrated-evidence-plan.csv",
+      "used_by": {
+        "missions": [
+          "evidence-investment",
+          "launch-plan-swarm",
+          "launch-readiness",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [],
+        "skills": [
+          "clinical-trials-search",
+          "diagram-and-schema",
+          "evidence-gap-analysis",
+          "integrated-evidence-plan",
+          "investigator-initiated-study-review",
+          "launch-timeline-and-governance",
+          "strategic-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/interaction-notes.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "What happened at the last meeting with each",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/interaction-notes.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/interaction-notes.md",
+      "used_by": {
+        "missions": [
+          "kol-meeting",
+          "msl-post-call"
+        ],
+        "team_missions": [
+          "mission-1"
+        ],
+        "skills": [
+          "kol-engagement-brief",
+          "msl-post-call-follow-up"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/kol-dossiers.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Three experts, including one who is deliberately difficult",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/kol-dossiers.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/kol-dossiers.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "kol-meeting"
+        ],
+        "team_missions": [
+          "mission-1"
+        ],
+        "skills": [
+          "kol-engagement-brief"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/launch-readiness-register.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Launch readiness register",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/launch-readiness-register.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/launch-readiness-register.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-7"
+        ],
+        "skills": [
+          "launch-medical-readiness",
+          "launch-timeline-and-governance",
+          "medical-launch-plan"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/manuscript-draft.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Manuscript source draft",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/manuscript-draft.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/manuscript-draft.md",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "deliverable-quality-review",
+          "pubmed-search",
+          "scientific-manuscript"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/medical-education-needs.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Independent medical education needs assessment",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/medical-education-needs.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/medical-education-needs.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "patient-partnership"
+        ],
+        "team_missions": [],
+        "skills": [
+          "medical-education-program"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/medical-impact-metrics.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Medical impact metrics",
+      "format": "CSV",
+      "rows": 6,
+      "columns": [
+        "month",
+        "scientific_exchanges",
+        "unique_hcps",
+        "repeat_hcp_share",
+        "insights_submitted",
+        "insights_actioned",
+        "requests_closed_on_time",
+        "publication_milestones_on_time",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/medical-impact-metrics.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/medical-impact-metrics.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "executive-briefing",
+          "field-medical-planning",
+          "interactive-html-report",
+          "medical-affairs-metrics",
+          "medical-strategy-plan"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/medical-information-enquiries.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Medical information enquiries",
+      "format": "CSV",
+      "rows": 6,
+      "columns": [
+        "id",
+        "date",
+        "requester",
+        "country",
+        "channel",
+        "verbatim",
+        "response_status"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/medical-information-enquiries.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/medical-information-enquiries.csv",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness",
+          "medical-information"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-field-training",
+          "medical-affairs-foundations",
+          "medical-correspondence",
+          "medical-information-response",
+          "regulatory-label-intelligence",
+          "safety-communication"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/medical-plan.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "This year's plan, with the problems real plans have",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/medical-plan.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/medical-plan.md",
+      "used_by": {
+        "missions": [
+          "congress",
+          "field-insights",
+          "launch-plan-swarm",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "congress-intelligence",
+          "executive-briefing",
+          "medical-affairs-metrics",
+          "medical-launch-plan",
+          "medical-strategy-plan",
+          "strategic-analysis",
+          "workshop-launcher"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/mlr-review-comments.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "MLR review history",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/mlr-review-comments.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/mlr-review-comments.md",
+      "used_by": {
+        "missions": [
+          "launch-readiness"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-medical-readiness",
+          "mlr-review-readiness"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/patient-level-analysis.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Patient level analysis",
+      "format": "CSV",
+      "rows": 60,
+      "columns": [
+        "patient_id",
+        "arm",
+        "age_band",
+        "region",
+        "baseline_score",
+        "week16_change",
+        "responder",
+        "time_to_event_days",
+        "event",
+        "ae_grade3_plus"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/patient-level-analysis.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/patient-level-analysis.csv",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "data-visualization-for-medical",
+          "medical-slide-deck",
+          "real-world-evidence-design",
+          "visual-abstract"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/payer-hta-brief.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Payer and HTA evidence brief",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/payer-hta-brief.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/payer-hta-brief.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment",
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "payer-value-dossier",
+          "systematic-literature-review"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/plain-language-source.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Plain-language summary source",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/plain-language-source.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/plain-language-source.md",
+      "used_by": {
+        "missions": [
+          "patient-partnership",
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "deliverable-quality-review",
+          "plain-language-summary"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/product-profile.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "The compound, its approved indication, pivotal evidence and safety",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/product-profile.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/product-profile.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "congress",
+          "connected-planning",
+          "field-insights",
+          "kol-meeting",
+          "launch-plan-swarm",
+          "medical-information",
+          "msl-post-call",
+          "msl-pre-call",
+          "publication",
+          "thirty-day-capstone",
+          "transcript"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6",
+          "mission-7"
+        ],
+        "skills": [
+          "capability-detection",
+          "consulting-grade-design",
+          "evidence-appraisal",
+          "launch-field-training",
+          "library-menu",
+          "medical-affairs-orchestrator",
+          "medical-information-response",
+          "medical-launch-plan",
+          "msl-post-call-follow-up",
+          "msl-pre-call-planning",
+          "pdf-generation",
+          "plain-language-summary",
+          "promotional-material-medical-review",
+          "spreadsheet-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/promotional-claims-review.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Medical review exercise",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/promotional-claims-review.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/promotional-claims-review.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "mlr-review-readiness",
+          "promotional-material-medical-review",
+          "regulatory-label-intelligence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/publication-plan.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "What is currently planned",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/publication-plan.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/publication-plan.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "launch-timeline-and-governance",
+          "scientific-communication-strategy"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/rwe-study-concept.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "RWE protocol concept",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/rwe-study-concept.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/rwe-study-concept.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment"
+        ],
+        "team_missions": [],
+        "skills": [
+          "diagram-and-schema",
+          "integrated-evidence-plan",
+          "real-world-evidence-design"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/safety-case-series.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Safety communication source cases",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/safety-case-series.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/safety-case-series.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-field-training",
+          "safety-communication"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/scientific-platform-draft.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Scientific platform draft v0.7",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/scientific-platform-draft.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/scientific-platform-draft.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness"
+        ],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "launch-field-training",
+          "medical-slide-deck",
+          "scientific-communication-strategy",
+          "scientific-platform"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/structured-evidence-table.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Structured evidence table",
+      "format": "CSV",
+      "rows": 10,
+      "columns": [
+        "source_id",
+        "study",
+        "design",
+        "population_n",
+        "endpoint",
+        "result",
+        "role",
+        "evidence_tier",
+        "limitation"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/structured-evidence-table.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/structured-evidence-table.csv",
+      "used_by": {
+        "missions": [
+          "medical-information",
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "capability-detection",
+          "congress-abstract-and-poster",
+          "consulting-grade-design",
+          "evidence-appraisal",
+          "evidence-synthesis",
+          "guideline-engagement",
+          "interactive-html-report",
+          "medical-affairs-orchestrator",
+          "payer-value-dossier",
+          "pdf-generation",
+          "scientific-manuscript",
+          "scientific-platform",
+          "spreadsheet-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/immunology-ad/terminology-coding-queue.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Moderate-to-severe atopic dermatitis",
+      "ta_id": "immunology-ad",
+      "product": "DERMALYX",
+      "description": "Terminology coding queue",
+      "format": "CSV",
+      "rows": 5,
+      "columns": [
+        "record",
+        "verbatim",
+        "proposed_concept",
+        "proposed_code",
+        "confidence",
+        "review_needed"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/immunology-ad/terminology-coding-queue.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/immunology-ad/terminology-coding-queue.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "field-insight-synthesis",
+          "medical-terminology-mapping"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/README.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Data pack",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/README.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/README.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/abstract-poster-brief.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Congress abstract and poster brief",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/abstract-poster-brief.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/abstract-poster-brief.md",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "congress-abstract-and-poster",
+          "visual-abstract"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/advisory-board-transcript.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Advisory board transcript",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/advisory-board-transcript.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/advisory-board-transcript.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "transcript"
+        ],
+        "team_missions": [],
+        "skills": [
+          "advisory-board-design",
+          "insight-generation",
+          "medical-affairs-foundations",
+          "meeting-transcription"
+        ],
+        "scripts": [
+          "scripts/transcribe.py"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/competitor-announcements.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Press releases and corporate statements",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/competitor-announcements.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/competitor-announcements.md",
+      "used_by": {
+        "missions": [
+          "congress"
+        ],
+        "team_missions": [
+          "mission-3",
+          "mission-5"
+        ],
+        "skills": [
+          "competitive-intelligence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/congress-abstracts.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "What was presented at the recent congress",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/congress-abstracts.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/congress-abstracts.md",
+      "used_by": {
+        "missions": [
+          "congress"
+        ],
+        "team_missions": [
+          "mission-3"
+        ],
+        "skills": [
+          "competitive-intelligence",
+          "congress-intelligence",
+          "evidence-synthesis",
+          "literature-surveillance"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/document-ingestion-challenge.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Scanned-source transcription challenge",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/document-ingestion-challenge.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/document-ingestion-challenge.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "document-ingestion"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/evidence-landscape.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "What is known, what competitors have, what nobody has answered",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/evidence-landscape.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/evidence-landscape.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "evidence-investment",
+          "kol-meeting",
+          "launch-plan-swarm",
+          "patient-partnership",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "advisory-board-design",
+          "evidence-gap-analysis",
+          "literature-surveillance",
+          "medical-launch-plan",
+          "medical-strategy-plan",
+          "public-evidence-search",
+          "pubmed-search"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/field-account-plan.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Field account plan",
+      "format": "CSV",
+      "rows": 15,
+      "columns": [
+        "account_id",
+        "region",
+        "setting",
+        "eligible_patients_estimate",
+        "scientific_need_score",
+        "access_minutes",
+        "last_meaningful_exchange",
+        "open_request",
+        "priority_in_current_plan"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/field-account-plan.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/field-account-plan.csv",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "field-medical-planning"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/field-observations.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "55 field interaction records from one quarter",
+      "format": "CSV",
+      "rows": 55,
+      "columns": [
+        "record_id",
+        "date",
+        "msl",
+        "contact_id",
+        "setting",
+        "country",
+        "channel",
+        "observation"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/field-observations.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/field-observations.csv",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "field-insights",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-2",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "field-insight-synthesis",
+          "insight-generation",
+          "medical-education-program",
+          "workshop-launcher"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/guideline-landscape.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Guideline landscape",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/guideline-landscape.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/guideline-landscape.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "guideline-engagement",
+          "launch-timeline-and-governance",
+          "systematic-literature-review"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/iis-proposal.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Investigator-initiated study proposal",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/iis-proposal.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/iis-proposal.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment"
+        ],
+        "team_missions": [],
+        "skills": [
+          "clinical-trials-search",
+          "integrated-evidence-plan",
+          "investigator-initiated-study-review",
+          "medical-correspondence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/integrated-evidence-plan.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Integrated evidence plan",
+      "format": "CSV",
+      "rows": 5,
+      "columns": [
+        "work_id",
+        "question",
+        "decision",
+        "design",
+        "owner",
+        "cost_gbp",
+        "start",
+        "readout",
+        "status",
+        "dependency"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/integrated-evidence-plan.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/integrated-evidence-plan.csv",
+      "used_by": {
+        "missions": [
+          "evidence-investment",
+          "launch-plan-swarm",
+          "launch-readiness",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [],
+        "skills": [
+          "clinical-trials-search",
+          "diagram-and-schema",
+          "evidence-gap-analysis",
+          "integrated-evidence-plan",
+          "investigator-initiated-study-review",
+          "launch-timeline-and-governance",
+          "strategic-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/interaction-notes.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "What happened at the last meeting with each",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/interaction-notes.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/interaction-notes.md",
+      "used_by": {
+        "missions": [
+          "kol-meeting",
+          "msl-post-call"
+        ],
+        "team_missions": [
+          "mission-1"
+        ],
+        "skills": [
+          "kol-engagement-brief",
+          "msl-post-call-follow-up"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/kol-dossiers.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Three experts, including one who is deliberately difficult",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/kol-dossiers.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/kol-dossiers.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "kol-meeting"
+        ],
+        "team_missions": [
+          "mission-1"
+        ],
+        "skills": [
+          "kol-engagement-brief"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/launch-readiness-register.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Launch readiness register",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/launch-readiness-register.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/launch-readiness-register.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-7"
+        ],
+        "skills": [
+          "launch-medical-readiness",
+          "launch-timeline-and-governance",
+          "medical-launch-plan"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/manuscript-draft.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Manuscript source draft",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/manuscript-draft.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/manuscript-draft.md",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "deliverable-quality-review",
+          "pubmed-search",
+          "scientific-manuscript"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/medical-education-needs.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Independent medical education needs assessment",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/medical-education-needs.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/medical-education-needs.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "patient-partnership"
+        ],
+        "team_missions": [],
+        "skills": [
+          "medical-education-program"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/medical-impact-metrics.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Medical impact metrics",
+      "format": "CSV",
+      "rows": 6,
+      "columns": [
+        "month",
+        "scientific_exchanges",
+        "unique_hcps",
+        "repeat_hcp_share",
+        "insights_submitted",
+        "insights_actioned",
+        "requests_closed_on_time",
+        "publication_milestones_on_time",
+        "note"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/medical-impact-metrics.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/medical-impact-metrics.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "executive-briefing",
+          "field-medical-planning",
+          "interactive-html-report",
+          "medical-affairs-metrics",
+          "medical-strategy-plan"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/medical-information-enquiries.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Medical information enquiries",
+      "format": "CSV",
+      "rows": 6,
+      "columns": [
+        "id",
+        "date",
+        "requester",
+        "country",
+        "channel",
+        "verbatim",
+        "response_status"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/medical-information-enquiries.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/medical-information-enquiries.csv",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness",
+          "medical-information"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-field-training",
+          "medical-affairs-foundations",
+          "medical-correspondence",
+          "medical-information-response",
+          "regulatory-label-intelligence",
+          "safety-communication"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/medical-plan.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "This year's plan, with the problems real plans have",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/medical-plan.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/medical-plan.md",
+      "used_by": {
+        "missions": [
+          "congress",
+          "field-insights",
+          "launch-plan-swarm",
+          "thirty-day-capstone"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "congress-intelligence",
+          "executive-briefing",
+          "medical-affairs-metrics",
+          "medical-launch-plan",
+          "medical-strategy-plan",
+          "strategic-analysis",
+          "workshop-launcher"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/mlr-review-comments.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "MLR review history",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/mlr-review-comments.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/mlr-review-comments.md",
+      "used_by": {
+        "missions": [
+          "launch-readiness"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-medical-readiness",
+          "mlr-review-readiness"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/patient-level-analysis.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Patient level analysis",
+      "format": "CSV",
+      "rows": 60,
+      "columns": [
+        "patient_id",
+        "arm",
+        "age_band",
+        "region",
+        "baseline_score",
+        "week16_change",
+        "responder",
+        "time_to_event_days",
+        "event",
+        "ae_grade3_plus"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/patient-level-analysis.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/patient-level-analysis.csv",
+      "used_by": {
+        "missions": [
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "data-visualization-for-medical",
+          "medical-slide-deck",
+          "real-world-evidence-design",
+          "visual-abstract"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/payer-hta-brief.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Payer and HTA evidence brief",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/payer-hta-brief.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/payer-hta-brief.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment",
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "payer-value-dossier",
+          "systematic-literature-review"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/plain-language-source.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Plain-language summary source",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/plain-language-source.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/plain-language-source.md",
+      "used_by": {
+        "missions": [
+          "patient-partnership",
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "deliverable-quality-review",
+          "plain-language-summary"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/product-profile.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "The compound, its approved indication, pivotal evidence and safety",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/product-profile.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/product-profile.md",
+      "used_by": {
+        "missions": [
+          "advisory-board",
+          "congress",
+          "connected-planning",
+          "field-insights",
+          "kol-meeting",
+          "launch-plan-swarm",
+          "medical-information",
+          "msl-post-call",
+          "msl-pre-call",
+          "publication",
+          "thirty-day-capstone",
+          "transcript"
+        ],
+        "team_missions": [
+          "mission-1",
+          "mission-2",
+          "mission-3",
+          "mission-4",
+          "mission-5",
+          "mission-6",
+          "mission-7"
+        ],
+        "skills": [
+          "capability-detection",
+          "consulting-grade-design",
+          "evidence-appraisal",
+          "launch-field-training",
+          "library-menu",
+          "medical-affairs-orchestrator",
+          "medical-information-response",
+          "medical-launch-plan",
+          "msl-post-call-follow-up",
+          "msl-pre-call-planning",
+          "pdf-generation",
+          "plain-language-summary",
+          "promotional-material-medical-review",
+          "spreadsheet-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/promotional-claims-review.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Medical review exercise",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/promotional-claims-review.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/promotional-claims-review.md",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "mlr-review-readiness",
+          "promotional-material-medical-review",
+          "regulatory-label-intelligence"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/publication-plan.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "What is currently planned",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/publication-plan.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/publication-plan.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [
+          "mission-4",
+          "mission-5",
+          "mission-6"
+        ],
+        "skills": [
+          "launch-timeline-and-governance",
+          "scientific-communication-strategy"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/rwe-study-concept.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "RWE protocol concept",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/rwe-study-concept.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/rwe-study-concept.md",
+      "used_by": {
+        "missions": [
+          "evidence-investment"
+        ],
+        "team_missions": [],
+        "skills": [
+          "diagram-and-schema",
+          "integrated-evidence-plan",
+          "real-world-evidence-design"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/safety-case-series.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Safety communication source cases",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/safety-case-series.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/safety-case-series.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm"
+        ],
+        "team_missions": [],
+        "skills": [
+          "launch-field-training",
+          "safety-communication"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/scientific-platform-draft.md",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Scientific platform draft v0.7",
+      "format": "Markdown",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/scientific-platform-draft.md",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/scientific-platform-draft.md",
+      "used_by": {
+        "missions": [
+          "launch-plan-swarm",
+          "launch-readiness"
+        ],
+        "team_missions": [],
+        "skills": [
+          "citation-integrity",
+          "launch-field-training",
+          "medical-slide-deck",
+          "scientific-communication-strategy",
+          "scientific-platform"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/structured-evidence-table.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Structured evidence table",
+      "format": "CSV",
+      "rows": 10,
+      "columns": [
+        "source_id",
+        "study",
+        "design",
+        "population_n",
+        "endpoint",
+        "result",
+        "role",
+        "evidence_tier",
+        "limitation"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/structured-evidence-table.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/structured-evidence-table.csv",
+      "used_by": {
+        "missions": [
+          "medical-information",
+          "publication"
+        ],
+        "team_missions": [],
+        "skills": [
+          "capability-detection",
+          "congress-abstract-and-poster",
+          "consulting-grade-design",
+          "evidence-appraisal",
+          "evidence-synthesis",
+          "guideline-engagement",
+          "interactive-html-report",
+          "medical-affairs-orchestrator",
+          "payer-value-dossier",
+          "pdf-generation",
+          "scientific-manuscript",
+          "scientific-platform",
+          "spreadsheet-analysis"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/oncology-mm/terminology-coding-queue.csv",
+      "synthetic": true,
+      "kind": "therapeutic-area-pack",
+      "therapeutic_area": "Relapsed/refractory multiple myeloma",
+      "ta_id": "oncology-mm",
+      "product": "NORVANTIB",
+      "description": "Terminology coding queue",
+      "format": "CSV",
+      "rows": 5,
+      "columns": [
+        "record",
+        "verbatim",
+        "proposed_concept",
+        "proposed_code",
+        "confidence",
+        "review_needed"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/oncology-mm/terminology-coding-queue.csv",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/oncology-mm/terminology-coding-queue.csv",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": [
+          "field-insight-synthesis",
+          "medical-terminology-mapping"
+        ]
+      }
+    },
+    {
+      "path": "synthetic/synthetic_expansion.py",
+      "synthetic": true,
+      "kind": "tooling",
+      "therapeutic_area": "all",
+      "product": "all (NORVANTIB, DERMALYX, ADIPOSYN)",
+      "description": "Extended cross-functional artefacts used by generate.py",
+      "format": "Python",
+      "raw_url": "https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/synthetic_expansion.py",
+      "url": "https://github.com/Open-Medical-Affairs/Data-Sources/blob/main/synthetic/synthetic_expansion.py",
+      "used_by": {
+        "missions": [],
+        "team_missions": [],
+        "skills": []
+      }
+    }
+  ]
+}
