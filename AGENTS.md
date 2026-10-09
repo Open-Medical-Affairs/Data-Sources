@@ -10,6 +10,13 @@ halves that must never be mixed.
 
 Raw base URL: `https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/`
 
+## Get the data (one dataset or everything)
+
+- **Manifest of every dataset:** `https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/manifest.json` (also `manifest.csv`, and `https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/manifest.json`). Each row: `id`, `name`, `type` (synthetic / public / public-snapshot), `group`, `format`, `license`, `data_policy`, `link_only`, `access`, `direct_url`, `view_url`.
+- `access` tells you what you may do: `download` (hosted here), `api-sample` / `bulk-file` (fetch from the official source), `official-site` (read terms, then use the official page), `link-only` (**never copy**; use at the source).
+- **Everything at once:** `https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic-data.zip`, `https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic.jsonl` (one JSON object per row/document, each with `synthetic: true`), `https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-data-catalog.zip`.
+- Script: `python3 tools/fetch_all.py [--only synthetic|public] [--id <id>]`.
+
 ## Discover everything
 
 - `https://raw.githubusercontent.com/Open-Medical-Affairs/Data-Sources/main/synthetic/index.json`: every synthetic file (`synthetic: true`, `product`, `therapeutic_area`, `ta_id`, `description`, `format`, `rows`/`columns` for CSV, `raw_url`, `used_by.missions` / `used_by.team_missions` / `used_by.skills`).

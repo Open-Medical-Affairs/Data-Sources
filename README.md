@@ -4,6 +4,28 @@
 
 **The data your AI agent can practice and work with: a fictional Medical Affairs company to rehearse on, and a guide to 52 real public data sources.**
 
+## Get the data
+
+There are two ways. Both are free and need no account.
+
+**One dataset.** Open the [dataset list](manifest.csv) (or [`manifest.json`](manifest.json) for agents). Every row has a **direct download link** and a **view link**.
+- 🧪 Synthetic files download straight from this repository.
+- 🌐 Public sources link to the **official** download or API page, with the licence next to it. Sources marked **LINK ONLY** must be used at the source and never copied.
+
+**Everything at once.** One click each:
+
+| Download | What you get |
+|---|---|
+| [**all-synthetic-data.zip**](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic-data.zip) | Every synthetic file: all three packs, the practice CRM and the SQLite file |
+| [**all-data-catalog.zip**](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-data-catalog.zip) | The full catalog: manifest (JSON + CSV), 52 public sources, synthetic index and real paper examples |
+| [all-synthetic.jsonl](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic.jsonl) | Every synthetic table row and document in one file, ready for an agent |
+| [all-synthetic-combined-csv.zip](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/all-synthetic-combined-csv.zip) | One CSV per table type across the three packs, with `pack` and `product` columns |
+| One pack: [oncology](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/synthetic-oncology-mm.zip) · [immunology](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/synthetic-immunology-ad.zip) · [cardiometabolic](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/synthetic-cardiometabolic-obesity.zip) · [practice CRM](https://github.com/Open-Medical-Affairs/Data-Sources/releases/latest/download/synthetic-connected.zip) | A single pack as a ZIP |
+
+Prefer a script? `python3 tools/fetch_all.py` (no installs) downloads all synthetic data, plus small official samples from the public sources whose terms allow it, into `./oma-data`. It skips every LINK ONLY source and prints where to get it. Run `python3 tools/fetch_all.py --list` to see every dataset ID, and `--id <id>` to download just one.
+
+> Everything synthetic stays marked **SYNTHETIC** inside the downloads too: every file keeps its banner, and each ZIP includes `SYNTHETIC-READ-ME-FIRST.txt`.
+
 ## New to GitHub? Start here
 
 You don't need to install anything or know GitHub. This page is a link you hand to your AI agent.
@@ -33,7 +55,7 @@ For the step-by-step Medical Affairs know-how, give your agent the companion ski
 | 🧪 | **Synthetic practice data** | A pretend pharma company (Nordvant Biopharma) with three pretend medicines, plus field notes, KOL files, MI enquiries, plans and a practice CRM | [`synthetic/`](synthetic/README.md) |
 | 🌐 | **Public data sources** | A guide to 52 real, free sources (PubMed, DailyMed, ClinicalTrials.gov, CMS Open Payments…) grouped by Medical Affairs job | [`public/catalog.md`](public/catalog.md) |
 | 📚 | **Real paper examples** | Nine real published papers (titles and DOIs only) for practising evidence searches | [`public/evidence-snapshots/`](public/evidence-snapshots/README.md) |
-| 🤖 | **For agents** | Machine-readable lists and instructions | [`AGENTS.md`](AGENTS.md) · [`synthetic/index.json`](synthetic/index.json) · [`public/catalog.json`](public/catalog.json) |
+| 🤖 | **For agents** | Machine-readable lists and instructions | [`AGENTS.md`](AGENTS.md) · [`manifest.json`](manifest.json) · [`synthetic/index.json`](synthetic/index.json) · [`public/catalog.json`](public/catalog.json) |
 
 ## Synthetic vs public: what's the difference?
 
@@ -123,6 +145,7 @@ git clone https://github.com/Open-Medical-Affairs/Data-Sources.git
 - **Machine-readable:** [`synthetic/index.json`](synthetic/index.json): every file with `synthetic: true`, product, therapeutic area, description, raw link and which skills and missions use it.
 - **Flaws are deliberate.** Seeded adverse events, a product complaint, off-label use and contradictions between sources are part of the exercise.
 - **Regenerate:** `python3 synthetic/generate.py && python3 tools/build_connected.py` (deterministic, standard library only).
+- **Manifest and downloads:** `python3 tools/build_manifest.py` rebuilds `manifest.json` / `manifest.csv`; `python3 tools/build_bundles.py` writes the release assets to `dist/`. The `release-data` workflow rebuilds and republishes them on every push to `main`.
 
 ## 🌐 Public sources
 
